@@ -220,26 +220,51 @@ function additionner(nombre1, nombre2) {
 }
 ```
 
-### 4.1. Exemple 1 :  
+### 4.1. Exemple 1 : Calcul de la moyenne avec des noms de variables ambigus 
 
-```JavaScript
+```JavaScript 
+function calc(a, b, c) {
+  const avg = (a + b + c) / 3; // Utilisation d'un nom de variable ambigu "avg" pour la moyenne
+  return avg;
+}
+
+const result = calc(10, 20, 30);
+console.log(result); // Affichera "20"
 ```
 
-**Explications** :
+**Explications** : Dans cet exemple, la fonction utilise un nom de variable ambigu "avg" pour stocker la moyenne des nombres `a`, `b`, et `c`. Utiliser des noms de variables plus descriptifs comme "moyenne" rendrait le code plus compréhensible.
 
-### 4.2. Exemple 2 :  
 
-```JavaScript
-```
-
-**Explications** :
-
-### 4.3. Exemple 3 :  
+### 4.2. Exemple 2 : Concaténation de chaînes avec des noms de variables ambigus
 
 ```JavaScript
+function concat(a, b) {
+  const str = a + b; // Utilisation d'un nom de variable ambigu "str" pour la chaîne concaténée
+  return str;
+}
+
+const result = concat("Bonjour, ", "monde !");
+console.log(result); // Affichera "Bonjour, monde !"
 ```
 
-**Explications** :
+**Explications** : Dans cet exemple, la fonction utilise un nom de variable ambigu "str" pour stocker la chaîne concaténée. Utiliser un nom de variable plus descriptif comme "chaineConcatenee" améliorerait la clarté du code.
+
+
+### 4.3. Exemple 3 : Calcul de la somme avec des noms de variables ambigus
+
+```JavaScript
+function sum(numbers) {
+  const total = numbers.reduce((acc, num) => acc + num, 0); // Utilisation d'un nom de variable ambigu "total" pour la somme
+  return total;
+}
+
+const values = [10, 20, 30];
+const result = sum(values);
+console.log(result); // Affichera "60"
+```
+
+**Explications** : Dans cet exemple, la fonction utilise un nom de variable ambigu "total" pour stocker la somme des nombres dans un tableau. Utiliser un nom de variable plus explicite comme "somme" serait préférable pour améliorer la compréhension du code.
+
 
 
 ## 5. Ne pas appeler la fonction
@@ -253,27 +278,6 @@ function saluer(nom) {
 // Oubli de l'appel à la fonction
 saluer("Alice");
 ```
-
-### 5.1. Exemple 1 :  
-
-```JavaScript
-```
-
-**Explications** :
-
-### 5.2. Exemple 2 :  
-
-```JavaScript
-```
-
-**Explications** :
-
-### 5.3. Exemple 3 :  
-
-```JavaScript
-```
-
-**Explications** :
 
 
 ## 6. Modifier les paramètres
@@ -293,24 +297,46 @@ function doubler(x) {
 }
 ```
 
-### 6.1. Exemple 1 :  
+### 6.1. Exemple 1 : Modification du paramètre directement
 
 ```JavaScript
+function doubler(x) {
+  x = x * 2; // Modification du paramètre directement
+  return x;
+}
+
+const resultat = doubler(5);
+console.log(resultat); // Affichera "10"
 ```
 
-**Explications** :
+**Explications** : Dans cet exemple, la fonction `doubler` prend un paramètre `x` et essaie de doubler sa valeur en modifiant `x` directement. Cela peut créer des effets secondaires inattendus, car cela modifie la valeur passée en argument.
 
-### 6.2. Exemple 2 :  
+
+### 6.2. Exemple 2 : Modification du tableau passé en paramètre
 
 ```JavaScript
+function ajouterElement(tableau, element) {
+  tableau.push(element); // Modification du tableau passé en paramètre
+}
+
+const maListe = [1, 2, 3];
+ajouterElement(maListe, 4);
+console.log(maListe); // Affichera "[1, 2, 3, 4]"
 ```
 
-**Explications** :
+**Explications** : Dans cet exemple, la fonction `ajouterElement` prend un tableau et un élément à ajouter, puis elle modifie directement le tableau en ajoutant l'élément. Cette modification directe du tableau passé en paramètre peut provoquer des effets secondaires inattendus.
 
-### 6.3. Exemple 3 :  
+
+### 6.3. Exemple 3 : Modification de l'objet passé en paramètre
 
 ```JavaScript
+function modifierPersonne(personne) {
+  personne.age = 30; // Modification de l'objet passé en paramètre
+}
+
+const alice = { nom: "Alice", age: 25 };
+modifierPersonne(alice);
+console.log(alice); // Affichera "{ nom: 'Alice', age: 30 }"
 ```
 
-**Explications** :
-
+**Explications** : Dans cet exemple, la fonction `modifierPersonne` prend un objet `personne` et modifie directement la propriété `age` de cet objet. Cette modification directe de l'objet passé en paramètre peut avoir des conséquences inattendues sur d'autres parties du code.
