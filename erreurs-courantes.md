@@ -6,7 +6,6 @@ Voici quelques-unes des erreurs les plus courantes quand on apprend les fonction
 
 
 ## 1. Oublier de retourner une valeur
-L'omission de l'instruction `return` ou de la valeur de retour dans une fonction peut entraîner des résultats inattendus. Assurez-vous que chaque chemin d'exécution de la fonction renvoie une valeur appropriée si nécessaire.
 
 ```javascript
 // Mauvais exemple
@@ -19,6 +18,66 @@ function ajouter(a, b) {
     return a + b;
 }
 ```
+
+### 1.1. Exemple 1 - Addition de deux nombres
+
+```javascript
+// Mauvais exemple
+function ajouter(a, b) {
+  a + b; // Oubli du return
+}
+
+const resultat = ajouter(3, 5);
+console.log(resultat); // Affichera "undefined"
+```
+
+**Explications** :
+Dans cet exemple, la fonction ajouter effectue l'addition de deux nombres, mais elle oublie de renvoyer le résultat à l'aide de l'instruction return. Par conséquent, lorsque nous appelons ajouter(3, 5), la valeur de retour est undefined, car la fonction ne renvoie rien.
+
+
+### 1.2. Exemple 2 - Calcul de la somme des éléments d'un tableau
+
+```javascript
+// Mauvais exemple
+function sommeTableau(tableau) {
+  let somme = 0;
+  for (let i = 0; i < tableau.length; i++) {
+    somme += tableau[i];
+  }
+  // Oubli du return
+}
+
+const valeurs = [1, 2, 3, 4, 5];
+const resultat = sommeTableau(valeurs);
+console.log(resultat); // Affichera "undefined"
+```
+
+**Explications** :
+Dans cet exemple, la fonction sommeTableau additionne les éléments d'un tableau, mais elle oublie également de renvoyer la somme calculée. Par conséquent, la valeur de retour est undefined.
+
+
+### 1.3. Exemple 3 : Recherche de l'élément maximum dans un tableau
+
+```javascript
+// Mauvais exemple
+function trouverMaximum(tableau) {
+  let maximum = 0;
+  for (let i = 0; i < tableau.length; i++) {
+    if (tableau[i] > maximum) {
+      maximum = tableau[i];
+    }
+  }
+  // Oubli du return
+}
+
+const valeurs = [12, 45, 6, 78, 23, 56];
+const resultat = trouverMaximum(valeurs);
+console.log(resultat); // Affichera "undefined"
+```
+
+**Explications** :
+Dans cet exemple, la fonction trouverMaximum parcourt un tableau pour trouver l'élément maximum, mais elle oublie de renvoyer la valeur maximale trouvée. Encore une fois, la valeur de retour est undefined.
+
 
 
 ## 2. Confondre paramètres et arguments
