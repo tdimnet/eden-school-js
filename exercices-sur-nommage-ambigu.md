@@ -1,6 +1,7 @@
 # Exercices sur les noms de variables et de fonctions ambigus
 
 ## 1. Addition de deux nombres avec des noms de variables ambigus
+
 Le code suivant tente d'effectuer une addition de deux nombres en utilisant des noms de variables ambigus. Identifiez les noms de variables peu descriptifs et corrigez-les pour rendre le code plus lisible.
 
 ```javascript
@@ -12,8 +13,8 @@ function c() {
 }
 ```
 
-
 ## 2. Multiplication de deux nombres avec des noms de variables ambigus
+
 Le code ci-dessous tente d'effectuer une multiplication de deux nombres en utilisant des noms de variables peu explicites. Identifiez les noms de variables ambigus et corrigez-les pour améliorer la lisibilité du code.
 
 ```javascript
@@ -25,8 +26,8 @@ function z() {
 }
 ```
 
-
 ## 3. Calcul de la somme de deux valeurs avec des noms de variables ambigus
+
 Le code suivant tente de calculer la somme de deux valeurs en utilisant des noms de variables peu descriptifs. Identifiez les noms de variables ambigus et corrigez-les pour rendre le code plus clair.
 
 ```javascript
@@ -38,8 +39,8 @@ function resultat() {
 }
 ```
 
-
 ## 4. Somme de deux nombres avec des noms de variables ambigus
+
 Le code ci-dessous tente de calculer la somme de deux nombres en utilisant des noms de variables peu explicites. Identifiez les noms de variables ambigus et corrigez-les pour améliorer la lisibilité du code.
 
 ```javascript
@@ -51,8 +52,8 @@ function somme() {
 }
 ```
 
-
 ## 5. Conversion de température avec des noms de variables ambigus
+
 Le code suivant tente de convertir une température de degrés Celsius en degrés Fahrenheit en utilisant des noms de variables peu descriptifs. Identifiez les noms de variables ambigus et corrigez-les pour rendre le code plus explicite.
 
 ```javascript

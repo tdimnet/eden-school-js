@@ -1,6 +1,7 @@
 # Exercices sur les variables globales
 
 ## 1. Correction d'une variable globale inutile
+
 Corrigez le code pour éviter l'utilisation de la variable globale
 
 ```javascript
@@ -12,8 +13,8 @@ function ajouter(a, b) {
 }
 ```
 
-
 ## 2. Correction de plusieurs variables globales inutiles
+
 Corrigez le code pour éviter l'utilisation des variables globales
 
 ```javascript
@@ -25,8 +26,8 @@ function multiplier() {
 }
 ```
 
-
 ## 3. Correction de variables globales inutiles dans une application
+
 Corrigez le code pour éviter l'utilisation de la variable globale
 
 ```javascript
@@ -41,8 +42,8 @@ function deconnecterUtilisateur() {
 }
 ```
 
-
 ## 4. Conversion de température de Celsius en Fahrenheit
+
 Corrigez le code pour éviter l'utilisation de la variable globale
 
 ```javascript
@@ -54,8 +55,8 @@ function ajouterElement(element) {
 }
 ```
 
-
 ## 5. Correction de variables globales inutiles dans une fonction complexe
+
 Corrigez le code pour éviter l'utilisation de la variable globale
 
 ```javascript
