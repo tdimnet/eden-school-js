@@ -154,6 +154,29 @@ function ajouter(a, b) {
 }
 ```
 
+### 3.1. Exemple 1 :  
+
+```JavaScript
+```
+
+**Explications** :
+
+### 3.2. Exemple 2 :  
+
+```JavaScript
+```
+
+**Explications** :
+
+### 3.3. Exemple 3 :  
+
+```JavaScript
+```
+
+**Explications** :
+
+
+
 ## 4. Utiliser des noms de variables ambigus
 Utilisez des noms de variables et de fonctions descriptifs pour rendre votre code plus lisible et éviter les confusions. Évitez les noms de variables tels que x, y, ou data.
 
@@ -169,6 +192,28 @@ function additionner(nombre1, nombre2) {
 }
 ```
 
+### 4.1. Exemple 1 :  
+
+```JavaScript
+```
+
+**Explications** :
+
+### 4.2. Exemple 2 :  
+
+```JavaScript
+```
+
+**Explications** :
+
+### 4.3. Exemple 3 :  
+
+```JavaScript
+```
+
+**Explications** :
+
+
 ## 5. Ne pas appeler la fonction
 Oublier d'appeler la fonction peut être une erreur courante. Assurez-vous d'appeler la fonction avec les arguments appropriés lorsque vous souhaitez exécuter son code.
 
@@ -180,6 +225,28 @@ function saluer(nom) {
 // Oubli de l'appel à la fonction
 saluer("Alice");
 ```
+
+### 5.1. Exemple 1 :  
+
+```JavaScript
+```
+
+**Explications** :
+
+### 5.2. Exemple 2 :  
+
+```JavaScript
+```
+
+**Explications** :
+
+### 5.3. Exemple 3 :  
+
+```JavaScript
+```
+
+**Explications** :
+
 
 ## 6. Modifier les paramètres
 Évitez de modifier les paramètres directement à l'intérieur de la fonction, car cela peut provoquer des effets secondaires inattendus. Utilisez des variables locales pour effectuer des modifications si nécessaire.
@@ -197,3 +264,25 @@ function doubler(x) {
   return resultat;
 }
 ```
+
+### 6.1. Exemple 1 :  
+
+```JavaScript
+```
+
+**Explications** :
+
+### 6.2. Exemple 2 :  
+
+```JavaScript
+```
+
+**Explications** :
+
+### 6.3. Exemple 3 :  
+
+```JavaScript
+```
+
+**Explications** :
+
