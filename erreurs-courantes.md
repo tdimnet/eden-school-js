@@ -52,6 +52,7 @@ const resultat = sommeTableau(valeurs);
 console.log(resultat); // Affichera "undefined"
 ```
 
+
 **Explications** :
 Dans cet exemple, la fonction sommeTableau additionne les éléments d'un tableau, mais elle oublie également de renvoyer la somme calculée. Par conséquent, la valeur de retour est undefined.
 
@@ -81,7 +82,6 @@ Dans cet exemple, la fonction trouverMaximum parcourt un tableau pour trouver l'
 
 
 ## 2. Confondre paramètres et arguments
-Les débutants ont souvent du mal à comprendre la différence entre les paramètres (déclarés dans la signature de la fonction) et les arguments (fournis lors de l'appel de la fonction). Assurez-vous que les noms et les positions correspondent correctement.
 
 ```javascript
 function multiplier(x, y) {
@@ -90,6 +90,51 @@ function multiplier(x, y) {
 
 multiplier(2, 3); // 2 et 3 sont des arguments
 ```
+
+### 2.1. Exemple 1 :  Addition de deux nombres
+
+```JavaScript
+function ajouter(a, b) {
+  return a + b;
+}
+
+const resultat = ajouter(3, 5);
+console.log(resultat); // Affichera "8"
+```
+
+**Explications** :
+Dans cet exemple, la fonction `ajouter` prend deux paramètres `a` et `b` et renvoie leur somme. L'appel `ajouter(3, 5)` fournit les arguments corrects, évitant ainsi la confusion entre les paramètres et les arguments.
+
+
+### 2.2. Exemple 2 : Concaténation de chaînes
+
+```JavaScript
+function concatener(chaine1, chaine2) {
+  return chaine1 + chaine2;
+}
+
+const resultat = concatener("Bonjour, ", "monde !");
+console.log(resultat); // Affichera "Bonjour, monde !"
+```
+
+**Explications** :
+Dans cet exemple, la fonction `concatener` prend deux paramètres `chaine1` et `chaine2` et renvoie la concaténation de ces deux chaînes. L'appel `concatener("Bonjour, ", "monde !")` utilise les arguments appropriés, évitant ainsi la confusion.
+
+
+### 2.3. Exemple 3 :  Calcul de l'aire d'un rectangle
+
+```JavaScript
+function calculerAireRectangle(longueur, largeur) {
+  return longueur * largeur;
+}
+
+const aire = calculerAireRectangle(5, 10);
+console.log(aire); // Affichera "50"
+```
+
+**Explications** :
+Dans cet exemple, la fonction `calculerAireRectangle` prend deux paramètres `longueur` et `largeur` et renvoie l'aire du rectangle en multipliant ces deux valeurs. Les arguments fournis dans l'appel `calculerAireRectangle(5, 10)` sont corrects, évitant toute confusion entre paramètres et arguments.
+
 
 ## 3. Déclarer des variables globales inutiles
 Évitez de créer des variables globales lorsque cela n'est pas nécessaire. Utilisez plutôt des variables locales dans la fonction pour éviter les conflits de noms et améliorer la lisibilité du code.
