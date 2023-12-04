@@ -154,27 +154,55 @@ function ajouter(a, b) {
 }
 ```
 
-### 3.1. Exemple 1 :  
+### 3.1. Exemple 1 : Ajout de deux nombres avec une variable globale inutile
 
 ```JavaScript
+let total = 0; // Déclaration d'une variable globale inutile
+
+function ajouter(a, b) {
+  total = a + b; // Modification de la variable globale
+}
+
+ajouter(3, 5);
+console.log(total); // Affichera "8"
 ```
 
-**Explications** :
+**Explications** : Dans cet exemple, une variable globale inutile `total` est déclarée en dehors de la fonction `ajouter`, puis elle est modifiée à l'intérieur de la fonction. Les variables globales devraient être évitées lorsque possible, et dans ce cas, elle est inutile.
 
-### 3.2. Exemple 2 :  
+### 3.2. Exemple 2 : Utilisation de variables globales pour le stockage temporaire
 
 ```JavaScript
+let resultat = 0; // Déclaration d'une variable globale inutile
+
+function multiplier(a, b) {
+  resultat = a * b; // Modification de la variable globale
+}
+
+multiplier(4, 7);
+console.log(resultat); // Affichera "28"
 ```
 
-**Explications** :
+**Explications** : Dans cet exemple, une variable globale inutile `resultat` est utilisée pour stocker temporairement le résultat d'une multiplication à l'intérieur de la fonction. L'utilisation de variables locales serait préférable pour éviter les effets secondaires.
 
-### 3.3. Exemple 3 :  
+
+### 3.3. Exemple 3 : Gestion d'états avec des variables globales inutiles
 
 ```JavaScript
+let compteur = 0; // Déclaration d'une variable globale inutile
+
+function incrementer() {
+  compteur++; // Modification de la variable globale
+}
+
+function afficherCompteur() {
+  console.log(compteur); // Lecture de la variable globale
+}
+
+incrementer();
+afficherCompteur(); // Affichera "1"
 ```
 
-**Explications** :
-
+**Explications** : Dans cet exemple, une variable globale inutile `compteur` est utilisée pour stocker un état qui est modifié et lu par différentes fonctions. Cette utilisation de variables globales peut entraîner des problèmes de lisibilité et de gestion de l'état.
 
 
 ## 4. Utiliser des noms de variables ambigus
